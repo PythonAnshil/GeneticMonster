@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane fx:controller="org.java.introduction.MainController" xmlns:fx="http://javafx.com/fxml" alignment="CENTER" hgap="10" vgap="10">
+    <Label text="Name:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="nameField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <Label text="Color:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="colorField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <Label text="Strength:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <TextField fx:id="strengthField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+    <Label text="Speed:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <TextField fx:id="speedField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+    <Label text="Type:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+    <ComboBox fx:id="typeComboBox" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+    <Button text="Create Monster" onAction="#handleCreateMonster" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+    <ListView fx:id="monsterListView" GridPane.rowIndex="6" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+
+    <Button text="Save Game" onAction="#handleSaveGame" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+    <Button text="Load Game" onAction="#handleLoadGame" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+</GridPane>
